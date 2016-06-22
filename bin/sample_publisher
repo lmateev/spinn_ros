@@ -1,0 +1,16 @@
+#! /usr/bin/env python
+
+#from std_msgs.msg import Int8
+import rospy
+rospy.init_node("sample_publisher")
+
+import spinn_wrapper.sample_publisher
+
+if __name__ == '__main__':
+
+    spinn_wrapper.sample_publisher.run()
+
+
+
+
+

@@ -1,0 +1,15 @@
+#! /usr/bin/env python
+
+
+import rospy
+rospy.init_node("ros_driver")
+print "ROS Node initialized"
+import spinn_wrapper.spinn_ros
+
+
+if __name__ == '__main__':
+
+    spinn_wrapper.spinn_ros.run()
+
+
+

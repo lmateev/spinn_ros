@@ -1,0 +1,4 @@
+
+<launch>
+      <node name="sample_publisher" pkg="spinn_wrapper" type="sample_publisher" respawn="true" />
+</launch>

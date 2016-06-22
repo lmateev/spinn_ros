@@ -1,0 +1,4 @@
+ <launch>
+      <node name="ros_driver" pkg="spinn_wrapper" type="spinn_ros" respawn="true" />
+      <node name="sample_publisher" pkg="spinn_wrapper" type="sample_publisher" respawn="true" />
+ </launch>

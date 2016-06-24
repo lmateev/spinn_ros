@@ -17,17 +17,24 @@ import threading
 import time
 import rospy
 from std_msgs.msg import Int8
+from spinn_wrapper.msg import Spike
 
 
 
-pub = rospy.Publisher('/output_spikes', Int8, queue_size = 10)
+#pub = rospy.Publisher('/output_spikes', Int8, queue_size = 10)
+pub = rospy.Publisher('/output_spikes', Spike, queue_size = 10)
 
 def spike_received_ros_callback(msg):
-    id = msg.data
-    print "Received spike from external device: " + str(id)
-    live_spikes_connection_send.send_spike("spike_injector",id)
+    #id = msg.data
+    id = msg.id
+    label = msg.label
+    print "Received spike from external device: " + str(id) + " with population label " + str(label)
+    #live_spikes_connection_send.send_spike("spike_injector",id)
+    live_spikes_connection_send.send_spike(label,id)
 
-subscriber = rospy.Subscriber('/input_spikes', Int8, spike_received_ros_callback)
+#subscriber = rospy.Subscriber('/input_spikes', Int8, spike_received_ros_callback)
+subscriber = rospy.Subscriber('/input_spikes', Spike, spike_received_ros_callback)
+
 
 # Create an initialisation method
 def init_pop(label, n_neurons, run_time_ms, machine_timestep_ms):
@@ -39,7 +46,11 @@ def init_pop(label, n_neurons, run_time_ms, machine_timestep_ms):
 def receive_spikes(label, time, neuron_ids):
     global pub
     for neuron_id in neuron_ids:
-        pub.publish(neuron_id)
+        #pub.publish(neuron_id)
+        msg = Spike()
+        msg.id = neuron_id
+        msg.label = label
+        pub.publish(msg)
 
 
 # initial call to set up the front end (pynn requirement)
@@ -103,53 +114,105 @@ cell_params_spike_injector_with_key = {
 }
 
 # create synfire populations (if cur exp)
-pop = Frontend.Population(n_neurons, Frontend.IF_curr_exp,
-				  cell_params_lif, label='pop')
+#pop = Frontend.Population(n_neurons, Frontend.IF_curr_exp,
+				  #cell_params_lif, label='pop')
+				  
+pop_one = Frontend.Population(n_neurons, Frontend.IF_curr_exp,
+				  cell_params_lif, label='pop_one')
+pop_two = Frontend.Population(n_neurons, Frontend.IF_curr_exp,
+				  cell_params_lif, label='pop_two')
 
 
 
 # Create injection populations
-injector = Frontend.Population(
+#injector = Frontend.Population(
+    #n_neurons, ExternalDevices.SpikeInjector,
+    #cell_params_spike_injector_with_key, label='spike_injector')
+
+injector_one = Frontend.Population(
     n_neurons, ExternalDevices.SpikeInjector,
-    cell_params_spike_injector_with_key, label='spike_injector')
+    cell_params_spike_injector_with_key, label='spike_injector_one')
+
+injector_two = Frontend.Population(
+    n_neurons, ExternalDevices.SpikeInjector,
+    cell_params_spike_injector, label='spike_injector_two')
 
 
 
 # Create a connection from the injector into the populations
-Frontend.Projection(injector, pop,
+#Frontend.Projection(injector, pop,
+		    #Frontend.OneToOneConnector(weights=weight_to_spike))
+
+Frontend.Projection(injector_one, pop_one,
+		    Frontend.OneToOneConnector(weights=weight_to_spike))
+
+Frontend.Projection(injector_two, pop_two,
 		    Frontend.OneToOneConnector(weights=weight_to_spike))
 
 
 
 # Activate the sending of live spikes
+#ExternalDevices.activate_live_output_for(
+    #pop, database_notify_host="localhost",
+    #database_notify_port_num=19996)
+
 ExternalDevices.activate_live_output_for(
-    pop, database_notify_host="localhost",
+    pop_one, database_notify_host="localhost",
+    database_notify_port_num=19996)
+
+ExternalDevices.activate_live_output_for(
+    pop_two, database_notify_host="localhost",
     database_notify_port_num=19996)
 
 
 
 # Set up the live connection for sending spikes
+#live_spikes_connection_send = SpynnakerLiveSpikesConnection(
+    #receive_labels=None, local_port=19999,
+    #send_labels=["spike_injector"])
+ 
+
 live_spikes_connection_send = SpynnakerLiveSpikesConnection(
     receive_labels=None, local_port=19999,
-    send_labels=["spike_injector"])
+    send_labels=["spike_injector_one","spike_injector_two"])
 
 
 
 # Set up callbacks to occur at initialisation
+#live_spikes_connection_send.add_init_callback(
+    #"spike_injector", init_pop)
+    
+    
 live_spikes_connection_send.add_init_callback(
-    "spike_injector", init_pop)
+    "spike_injector_one", init_pop)
+
+live_spikes_connection_send.add_init_callback(
+    "spike_injector_two", init_pop)
 
 
 
+#live_spikes_connection_receive = SpynnakerLiveSpikesConnection(
+	#receive_labels=["pop"],
+	#local_port=19996, send_labels=None)
+	
 live_spikes_connection_receive = SpynnakerLiveSpikesConnection(
-	receive_labels=["pop"],
+	receive_labels=["pop_one","pop_two"],
 	local_port=19996, send_labels=None)
 
 
 
+
+
 # Set up callbacks to occur when spikes are received
+#live_spikes_connection_receive.add_receive_callback(
+	#"pop", receive_spikes)
+	
+	
 live_spikes_connection_receive.add_receive_callback(
-	"pop", receive_spikes)
+	"pop_one", receive_spikes)
+
+live_spikes_connection_receive.add_receive_callback(
+	"pop_two", receive_spikes)
 
 
 

@@ -58,7 +58,7 @@ Frontend.setup(timestep=1.0, min_delay=1.0, max_delay=144.0)
 
 # neurons per population and the length of runtime in ms for the simulation,
 # as well as the expected weight each spike will contain
-n_neurons = 100
+n_neurons = 15000
 run_time = 800000
 weight_to_spike = 2.0
 
@@ -119,8 +119,7 @@ cell_params_spike_injector_with_key = {
 				  
 pop_one = Frontend.Population(n_neurons, Frontend.IF_curr_exp,
 				  cell_params_lif, label='pop_one')
-pop_two = Frontend.Population(n_neurons, Frontend.IF_curr_exp,
-				  cell_params_lif, label='pop_two')
+
 
 
 
@@ -133,10 +132,6 @@ injector_one = Frontend.Population(
     n_neurons, ExternalDevices.SpikeInjector,
     cell_params_spike_injector_with_key, label='spike_injector_one')
 
-injector_two = Frontend.Population(
-    n_neurons, ExternalDevices.SpikeInjector,
-    cell_params_spike_injector, label='spike_injector_two')
-
 
 
 # Create a connection from the injector into the populations
@@ -146,8 +141,6 @@ injector_two = Frontend.Population(
 Frontend.Projection(injector_one, pop_one,
 		    Frontend.OneToOneConnector(weights=weight_to_spike))
 
-Frontend.Projection(injector_two, pop_two,
-		    Frontend.OneToOneConnector(weights=weight_to_spike))
 
 
 
@@ -160,9 +153,6 @@ ExternalDevices.activate_live_output_for(
     pop_one, database_notify_host="localhost",
     database_notify_port_num=19996)
 
-ExternalDevices.activate_live_output_for(
-    pop_two, database_notify_host="localhost",
-    database_notify_port_num=19996)
 
 
 
@@ -174,7 +164,7 @@ ExternalDevices.activate_live_output_for(
 
 live_spikes_connection_send = SpynnakerLiveSpikesConnection(
     receive_labels=None, local_port=19999,
-    send_labels=["spike_injector_one","spike_injector_two"])
+    send_labels=["spike_injector_one"])
 
 
 
@@ -186,8 +176,7 @@ live_spikes_connection_send = SpynnakerLiveSpikesConnection(
 live_spikes_connection_send.add_init_callback(
     "spike_injector_one", init_pop)
 
-live_spikes_connection_send.add_init_callback(
-    "spike_injector_two", init_pop)
+
 
 
 
@@ -196,7 +185,7 @@ live_spikes_connection_send.add_init_callback(
 	#local_port=19996, send_labels=None)
 	
 live_spikes_connection_receive = SpynnakerLiveSpikesConnection(
-	receive_labels=["pop_one","pop_two"],
+	receive_labels=["pop_one"],
 	local_port=19996, send_labels=None)
 
 
@@ -211,8 +200,7 @@ live_spikes_connection_receive = SpynnakerLiveSpikesConnection(
 live_spikes_connection_receive.add_receive_callback(
 	"pop_one", receive_spikes)
 
-live_spikes_connection_receive.add_receive_callback(
-	"pop_two", receive_spikes)
+
 
 
 

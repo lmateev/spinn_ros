@@ -1,0 +1,62 @@
+        Placement Information by Vertex
+        ===============================
+
+Generated: Fri Jun 24 16:42:49 2016 for target machine '192.168.240.253'
+
+**** Vertex: 'LiveSpikeReceiver'
+Model: live packet gather
+Pop size: 1
+Sub-vertices: 
+  Slice 0:0 (1 atoms) 
+
+**** Vertex: 'pop_one'
+Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+Pop size: 10000
+Sub-vertices: 
+  Slice 0:254 (255 atoms) 
+  Slice 255:509 (255 atoms) 
+  Slice 510:764 (255 atoms) 
+  Slice 765:1019 (255 atoms) 
+  Slice 1020:1274 (255 atoms) 
+  Slice 1275:1529 (255 atoms) 
+  Slice 1530:1784 (255 atoms) 
+  Slice 1785:2039 (255 atoms) 
+  Slice 2040:2294 (255 atoms) 
+  Slice 2295:2549 (255 atoms) 
+  Slice 2550:2804 (255 atoms) 
+  Slice 2805:3059 (255 atoms) 
+  Slice 3060:3314 (255 atoms) 
+  Slice 3315:3569 (255 atoms) 
+  Slice 3570:3824 (255 atoms) 
+  Slice 3825:4079 (255 atoms) 
+  Slice 4080:4334 (255 atoms) 
+  Slice 4335:4589 (255 atoms) 
+  Slice 4590:4844 (255 atoms) 
+  Slice 4845:5099 (255 atoms) 
+  Slice 5100:5354 (255 atoms) 
+  Slice 5355:5609 (255 atoms) 
+  Slice 5610:5864 (255 atoms) 
+  Slice 5865:6119 (255 atoms) 
+  Slice 6120:6374 (255 atoms) 
+  Slice 6375:6629 (255 atoms) 
+  Slice 6630:6884 (255 atoms) 
+  Slice 6885:7139 (255 atoms) 
+  Slice 7140:7394 (255 atoms) 
+  Slice 7395:7649 (255 atoms) 
+  Slice 7650:7904 (255 atoms) 
+  Slice 7905:8159 (255 atoms) 
+  Slice 8160:8414 (255 atoms) 
+  Slice 8415:8669 (255 atoms) 
+  Slice 8670:8924 (255 atoms) 
+  Slice 8925:9179 (255 atoms) 
+  Slice 9180:9434 (255 atoms) 
+  Slice 9435:9689 (255 atoms) 
+  Slice 9690:9944 (255 atoms) 
+  Slice 9945:9999 (55 atoms) 
+
+**** Vertex: 'spike_injector_one'
+Model: ReverseIpTagMultiCastSource
+Pop size: 10000
+Sub-vertices: 
+  Slice 0:9999 (10000 atoms) 
+

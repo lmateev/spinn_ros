@@ -1,0 +1,206 @@
+Subvert: LiveSpikeReceiver:0:0 
+
+
+Subvert: pop_one:0:254 
+subedge:PartitionedEdge:pop_one:0:254->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0x0L:0xffffff00] 
+
+
+Subvert: pop_one:255:509 
+subedge:PartitionedEdge:pop_one:255:509->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0x100L:0xffffff00] 
+
+
+Subvert: pop_one:510:764 
+subedge:PartitionedEdge:pop_one:510:764->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0x200L:0xffffff00] 
+
+
+Subvert: pop_one:765:1019 
+subedge:PartitionedEdge:pop_one:765:1019->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0x300L:0xffffff00] 
+
+
+Subvert: pop_one:1020:1274 
+subedge:PartitionedEdge:pop_one:1020:1274->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0x400L:0xffffff00] 
+
+
+Subvert: pop_one:1275:1529 
+subedge:PartitionedEdge:pop_one:1275:1529->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0x500L:0xffffff00] 
+
+
+Subvert: pop_one:1530:1784 
+subedge:PartitionedEdge:pop_one:1530:1784->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0x600L:0xffffff00] 
+
+
+Subvert: pop_one:1785:2039 
+subedge:PartitionedEdge:pop_one:1785:2039->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0x700L:0xffffff00] 
+
+
+Subvert: pop_one:2040:2294 
+subedge:PartitionedEdge:pop_one:2040:2294->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0x800L:0xffffff00] 
+
+
+Subvert: pop_one:2295:2549 
+subedge:PartitionedEdge:pop_one:2295:2549->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0x900L:0xffffff00] 
+
+
+Subvert: pop_one:2550:2804 
+subedge:PartitionedEdge:pop_one:2550:2804->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0xa00L:0xffffff00] 
+
+
+Subvert: pop_one:2805:3059 
+subedge:PartitionedEdge:pop_one:2805:3059->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0xb00L:0xffffff00] 
+
+
+Subvert: pop_one:3060:3314 
+subedge:PartitionedEdge:pop_one:3060:3314->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0xc00L:0xffffff00] 
+
+
+Subvert: pop_one:3315:3569 
+subedge:PartitionedEdge:pop_one:3315:3569->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0xd00L:0xffffff00] 
+
+
+Subvert: pop_one:3570:3824 
+subedge:PartitionedEdge:pop_one:3570:3824->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0xe00L:0xffffff00] 
+
+
+Subvert: pop_one:3825:4079 
+subedge:PartitionedEdge:pop_one:3825:4079->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0xf00L:0xffffff00] 
+
+
+Subvert: pop_one:4080:4334 
+subedge:PartitionedEdge:pop_one:4080:4334->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0x1000L:0xffffff00] 
+
+
+Subvert: pop_one:4335:4589 
+subedge:PartitionedEdge:pop_one:4335:4589->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0x1100L:0xffffff00] 
+
+
+Subvert: pop_one:4590:4844 
+subedge:PartitionedEdge:pop_one:4590:4844->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0x1200L:0xffffff00] 
+
+
+Subvert: pop_one:4845:5099 
+subedge:PartitionedEdge:pop_one:4845:5099->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0x1300L:0xffffff00] 
+
+
+Subvert: pop_one:5100:5354 
+subedge:PartitionedEdge:pop_one:5100:5354->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0x1400L:0xffffff00] 
+
+
+Subvert: pop_one:5355:5609 
+subedge:PartitionedEdge:pop_one:5355:5609->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0x1500L:0xffffff00] 
+
+
+Subvert: pop_one:5610:5864 
+subedge:PartitionedEdge:pop_one:5610:5864->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0x1600L:0xffffff00] 
+
+
+Subvert: pop_one:5865:6119 
+subedge:PartitionedEdge:pop_one:5865:6119->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0x1700L:0xffffff00] 
+
+
+Subvert: pop_one:6120:6374 
+subedge:PartitionedEdge:pop_one:6120:6374->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0x1800L:0xffffff00] 
+
+
+Subvert: pop_one:6375:6629 
+subedge:PartitionedEdge:pop_one:6375:6629->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0x1900L:0xffffff00] 
+
+
+Subvert: pop_one:6630:6884 
+subedge:PartitionedEdge:pop_one:6630:6884->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0x1a00L:0xffffff00] 
+
+
+Subvert: pop_one:6885:7139 
+subedge:PartitionedEdge:pop_one:6885:7139->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0x1b00L:0xffffff00] 
+
+
+Subvert: pop_one:7140:7394 
+subedge:PartitionedEdge:pop_one:7140:7394->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0x1c00L:0xffffff00] 
+
+
+Subvert: pop_one:7395:7649 
+subedge:PartitionedEdge:pop_one:7395:7649->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0x1d00L:0xffffff00] 
+
+
+Subvert: pop_one:7650:7904 
+subedge:PartitionedEdge:pop_one:7650:7904->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0x1e00L:0xffffff00] 
+
+
+Subvert: pop_one:7905:8159 
+subedge:PartitionedEdge:pop_one:7905:8159->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0x1f00L:0xffffff00] 
+
+
+Subvert: pop_one:8160:8414 
+subedge:PartitionedEdge:pop_one:8160:8414->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0x2000L:0xffffff00] 
+
+
+Subvert: pop_one:8415:8669 
+subedge:PartitionedEdge:pop_one:8415:8669->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0x2100L:0xffffff00] 
+
+
+Subvert: pop_one:8670:8924 
+subedge:PartitionedEdge:pop_one:8670:8924->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0x2200L:0xffffff00] 
+
+
+Subvert: pop_one:8925:9179 
+subedge:PartitionedEdge:pop_one:8925:9179->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0x2300L:0xffffff00] 
+
+
+Subvert: pop_one:9180:9434 
+subedge:PartitionedEdge:pop_one:9180:9434->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0x2400L:0xffffff00] 
+
+
+Subvert: pop_one:9435:9689 
+subedge:PartitionedEdge:pop_one:9435:9689->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0x2500L:0xffffff00] 
+
+
+Subvert: pop_one:9690:9944 
+subedge:PartitionedEdge:pop_one:9690:9944->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0x2600L:0xffffff00] 
+
+
+Subvert: pop_one:9945:9999 
+subedge:PartitionedEdge:pop_one:9945:9999->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0x2700L:0xffffffc0] 
+
+
+Subvert: spike_injector_one:0:9999 
+subedge:PartitionedEdge:spike_injector_one:0:9999->pop_one:0:254, keys_and_masks:[KeyAndMask:0x70000:0xffffc000] 
+subedge:PartitionedEdge:spike_injector_one:0:9999->pop_one:255:509, keys_and_masks:[KeyAndMask:0x70000:0xffffc000] 
+subedge:PartitionedEdge:spike_injector_one:0:9999->pop_one:510:764, keys_and_masks:[KeyAndMask:0x70000:0xffffc000] 
+subedge:PartitionedEdge:spike_injector_one:0:9999->pop_one:765:1019, keys_and_masks:[KeyAndMask:0x70000:0xffffc000] 
+subedge:PartitionedEdge:spike_injector_one:0:9999->pop_one:1020:1274, keys_and_masks:[KeyAndMask:0x70000:0xffffc000] 
+subedge:PartitionedEdge:spike_injector_one:0:9999->pop_one:1275:1529, keys_and_masks:[KeyAndMask:0x70000:0xffffc000] 
+subedge:PartitionedEdge:spike_injector_one:0:9999->pop_one:1530:1784, keys_and_masks:[KeyAndMask:0x70000:0xffffc000] 
+subedge:PartitionedEdge:spike_injector_one:0:9999->pop_one:1785:2039, keys_and_masks:[KeyAndMask:0x70000:0xffffc000] 
+subedge:PartitionedEdge:spike_injector_one:0:9999->pop_one:2040:2294, keys_and_masks:[KeyAndMask:0x70000:0xffffc000] 
+subedge:PartitionedEdge:spike_injector_one:0:9999->pop_one:2295:2549, keys_and_masks:[KeyAndMask:0x70000:0xffffc000] 
+subedge:PartitionedEdge:spike_injector_one:0:9999->pop_one:2550:2804, keys_and_masks:[KeyAndMask:0x70000:0xffffc000] 
+subedge:PartitionedEdge:spike_injector_one:0:9999->pop_one:2805:3059, keys_and_masks:[KeyAndMask:0x70000:0xffffc000] 
+subedge:PartitionedEdge:spike_injector_one:0:9999->pop_one:3060:3314, keys_and_masks:[KeyAndMask:0x70000:0xffffc000] 
+subedge:PartitionedEdge:spike_injector_one:0:9999->pop_one:3315:3569, keys_and_masks:[KeyAndMask:0x70000:0xffffc000] 
+subedge:PartitionedEdge:spike_injector_one:0:9999->pop_one:3570:3824, keys_and_masks:[KeyAndMask:0x70000:0xffffc000] 
+subedge:PartitionedEdge:spike_injector_one:0:9999->pop_one:3825:4079, keys_and_masks:[KeyAndMask:0x70000:0xffffc000] 
+subedge:PartitionedEdge:spike_injector_one:0:9999->pop_one:4080:4334, keys_and_masks:[KeyAndMask:0x70000:0xffffc000] 
+subedge:PartitionedEdge:spike_injector_one:0:9999->pop_one:4335:4589, keys_and_masks:[KeyAndMask:0x70000:0xffffc000] 
+subedge:PartitionedEdge:spike_injector_one:0:9999->pop_one:4590:4844, keys_and_masks:[KeyAndMask:0x70000:0xffffc000] 
+subedge:PartitionedEdge:spike_injector_one:0:9999->pop_one:4845:5099, keys_and_masks:[KeyAndMask:0x70000:0xffffc000] 
+subedge:PartitionedEdge:spike_injector_one:0:9999->pop_one:5100:5354, keys_and_masks:[KeyAndMask:0x70000:0xffffc000] 
+subedge:PartitionedEdge:spike_injector_one:0:9999->pop_one:5355:5609, keys_and_masks:[KeyAndMask:0x70000:0xffffc000] 
+subedge:PartitionedEdge:spike_injector_one:0:9999->pop_one:5610:5864, keys_and_masks:[KeyAndMask:0x70000:0xffffc000] 
+subedge:PartitionedEdge:spike_injector_one:0:9999->pop_one:5865:6119, keys_and_masks:[KeyAndMask:0x70000:0xffffc000] 
+subedge:PartitionedEdge:spike_injector_one:0:9999->pop_one:6120:6374, keys_and_masks:[KeyAndMask:0x70000:0xffffc000] 
+subedge:PartitionedEdge:spike_injector_one:0:9999->pop_one:6375:6629, keys_and_masks:[KeyAndMask:0x70000:0xffffc000] 
+subedge:PartitionedEdge:spike_injector_one:0:9999->pop_one:6630:6884, keys_and_masks:[KeyAndMask:0x70000:0xffffc000] 
+subedge:PartitionedEdge:spike_injector_one:0:9999->pop_one:6885:7139, keys_and_masks:[KeyAndMask:0x70000:0xffffc000] 
+subedge:PartitionedEdge:spike_injector_one:0:9999->pop_one:7140:7394, keys_and_masks:[KeyAndMask:0x70000:0xffffc000] 
+subedge:PartitionedEdge:spike_injector_one:0:9999->pop_one:7395:7649, keys_and_masks:[KeyAndMask:0x70000:0xffffc000] 
+subedge:PartitionedEdge:spike_injector_one:0:9999->pop_one:7650:7904, keys_and_masks:[KeyAndMask:0x70000:0xffffc000] 
+subedge:PartitionedEdge:spike_injector_one:0:9999->pop_one:7905:8159, keys_and_masks:[KeyAndMask:0x70000:0xffffc000] 
+subedge:PartitionedEdge:spike_injector_one:0:9999->pop_one:8160:8414, keys_and_masks:[KeyAndMask:0x70000:0xffffc000] 
+subedge:PartitionedEdge:spike_injector_one:0:9999->pop_one:8415:8669, keys_and_masks:[KeyAndMask:0x70000:0xffffc000] 
+subedge:PartitionedEdge:spike_injector_one:0:9999->pop_one:8670:8924, keys_and_masks:[KeyAndMask:0x70000:0xffffc000] 
+subedge:PartitionedEdge:spike_injector_one:0:9999->pop_one:8925:9179, keys_and_masks:[KeyAndMask:0x70000:0xffffc000] 
+subedge:PartitionedEdge:spike_injector_one:0:9999->pop_one:9180:9434, keys_and_masks:[KeyAndMask:0x70000:0xffffc000] 
+subedge:PartitionedEdge:spike_injector_one:0:9999->pop_one:9435:9689, keys_and_masks:[KeyAndMask:0x70000:0xffffc000] 
+subedge:PartitionedEdge:spike_injector_one:0:9999->pop_one:9690:9944, keys_and_masks:[KeyAndMask:0x70000:0xffffc000] 
+subedge:PartitionedEdge:spike_injector_one:0:9999->pop_one:9945:9999, keys_and_masks:[KeyAndMask:0x70000:0xffffc000] 
+
+

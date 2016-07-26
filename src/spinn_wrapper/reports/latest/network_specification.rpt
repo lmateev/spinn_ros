@@ -1,0 +1,27 @@
+        Network Specification
+ =====================
+
+Generated: Fri Jun 24 16:42:49 2016 for target machine '192.168.240.253'
+
+*** Vertices:
+Vertex pop_one, size: 10000
+Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+constraint: partitioner max atom per core constraint with size 255
+
+Vertex spike_injector_one, size: 10000
+Model: ReverseIpTagMultiCastSource
+constraint: partitioner max atom per core constraint with size 9223372036854775807
+
+Vertex LiveSpikeReceiver, size: 1
+Model: live packet gather
+constraint: partitioner max atom per core constraint with size 1
+constraint: placer radial placement from chip and core constraint at coords 0,0
+constraint: tag allocator constraint
+
+*** Edges:
+Edge Projection 0 from vertex: 'spike_injector_one' (10000 atoms) to vertex: 'pop_one' (10000 atoms)
+  Model: No Model
+
+Edge recorder_edge from vertex: 'pop_one' (10000 atoms) to vertex: 'LiveSpikeReceiver' (1 atoms)
+  Model: No Model
+

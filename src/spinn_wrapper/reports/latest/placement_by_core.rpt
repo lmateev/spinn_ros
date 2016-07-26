@@ -1,0 +1,221 @@
+        Placement Information by Core
+        =============================
+
+Generated: Fri Jun 24 16:42:49 2016 for target machine '192.168.240.253'
+
+**** Chip: (0, 0)
+Application cores: 18
+  Processor 1: Vertex: 'spike_injector_one', pop size: 10000
+              Slice on this core: 0:9999 (10000 atoms)
+              Model: ReverseIpTagMultiCastSource
+
+
+  Processor 2: Vertex: 'LiveSpikeReceiver', pop size: 1
+              Slice on this core: 0:0 (1 atoms)
+              Model: live packet gather
+
+
+  Processor 3: Vertex: 'pop_one', pop size: 10000
+              Slice on this core: 0:254 (255 atoms)
+              Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+
+
+  Processor 4: Vertex: 'pop_one', pop size: 10000
+              Slice on this core: 255:509 (255 atoms)
+              Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+
+
+  Processor 5: Vertex: 'pop_one', pop size: 10000
+              Slice on this core: 510:764 (255 atoms)
+              Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+
+
+  Processor 6: Vertex: 'pop_one', pop size: 10000
+              Slice on this core: 765:1019 (255 atoms)
+              Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+
+
+  Processor 7: Vertex: 'pop_one', pop size: 10000
+              Slice on this core: 1020:1274 (255 atoms)
+              Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+
+
+  Processor 8: Vertex: 'pop_one', pop size: 10000
+              Slice on this core: 1275:1529 (255 atoms)
+              Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+
+
+  Processor 9: Vertex: 'pop_one', pop size: 10000
+              Slice on this core: 1530:1784 (255 atoms)
+              Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+
+
+  Processor 10: Vertex: 'pop_one', pop size: 10000
+              Slice on this core: 1785:2039 (255 atoms)
+              Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+
+
+  Processor 11: Vertex: 'pop_one', pop size: 10000
+              Slice on this core: 2040:2294 (255 atoms)
+              Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+
+
+  Processor 12: Vertex: 'pop_one', pop size: 10000
+              Slice on this core: 2295:2549 (255 atoms)
+              Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+
+
+  Processor 13: Vertex: 'pop_one', pop size: 10000
+              Slice on this core: 2550:2804 (255 atoms)
+              Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+
+
+  Processor 14: Vertex: 'pop_one', pop size: 10000
+              Slice on this core: 2805:3059 (255 atoms)
+              Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+
+
+  Processor 15: Vertex: 'pop_one', pop size: 10000
+              Slice on this core: 3060:3314 (255 atoms)
+              Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+
+
+  Processor 16: Vertex: 'pop_one', pop size: 10000
+              Slice on this core: 3315:3569 (255 atoms)
+              Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+
+
+**** Chip: (1, 0)
+Application cores: 18
+  Processor 1: Vertex: 'pop_one', pop size: 10000
+              Slice on this core: 3570:3824 (255 atoms)
+              Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+
+
+  Processor 2: Vertex: 'pop_one', pop size: 10000
+              Slice on this core: 3825:4079 (255 atoms)
+              Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+
+
+  Processor 3: Vertex: 'pop_one', pop size: 10000
+              Slice on this core: 4080:4334 (255 atoms)
+              Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+
+
+  Processor 4: Vertex: 'pop_one', pop size: 10000
+              Slice on this core: 4335:4589 (255 atoms)
+              Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+
+
+  Processor 5: Vertex: 'pop_one', pop size: 10000
+              Slice on this core: 4590:4844 (255 atoms)
+              Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+
+
+  Processor 6: Vertex: 'pop_one', pop size: 10000
+              Slice on this core: 4845:5099 (255 atoms)
+              Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+
+
+  Processor 7: Vertex: 'pop_one', pop size: 10000
+              Slice on this core: 5100:5354 (255 atoms)
+              Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+
+
+  Processor 8: Vertex: 'pop_one', pop size: 10000
+              Slice on this core: 5355:5609 (255 atoms)
+              Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+
+
+  Processor 9: Vertex: 'pop_one', pop size: 10000
+              Slice on this core: 5610:5864 (255 atoms)
+              Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+
+
+  Processor 10: Vertex: 'pop_one', pop size: 10000
+              Slice on this core: 5865:6119 (255 atoms)
+              Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+
+
+  Processor 11: Vertex: 'pop_one', pop size: 10000
+              Slice on this core: 6120:6374 (255 atoms)
+              Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+
+
+  Processor 12: Vertex: 'pop_one', pop size: 10000
+              Slice on this core: 6375:6629 (255 atoms)
+              Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+
+
+  Processor 13: Vertex: 'pop_one', pop size: 10000
+              Slice on this core: 6630:6884 (255 atoms)
+              Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+
+
+  Processor 14: Vertex: 'pop_one', pop size: 10000
+              Slice on this core: 6885:7139 (255 atoms)
+              Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+
+
+  Processor 15: Vertex: 'pop_one', pop size: 10000
+              Slice on this core: 7140:7394 (255 atoms)
+              Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+
+
+  Processor 16: Vertex: 'pop_one', pop size: 10000
+              Slice on this core: 7395:7649 (255 atoms)
+              Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+
+
+**** Chip: (1, 1)
+Application cores: 18
+  Processor 1: Vertex: 'pop_one', pop size: 10000
+              Slice on this core: 7650:7904 (255 atoms)
+              Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+
+
+  Processor 2: Vertex: 'pop_one', pop size: 10000
+              Slice on this core: 7905:8159 (255 atoms)
+              Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+
+
+  Processor 3: Vertex: 'pop_one', pop size: 10000
+              Slice on this core: 8160:8414 (255 atoms)
+              Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+
+
+  Processor 4: Vertex: 'pop_one', pop size: 10000
+              Slice on this core: 8415:8669 (255 atoms)
+              Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+
+
+  Processor 5: Vertex: 'pop_one', pop size: 10000
+              Slice on this core: 8670:8924 (255 atoms)
+              Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+
+
+  Processor 6: Vertex: 'pop_one', pop size: 10000
+              Slice on this core: 8925:9179 (255 atoms)
+              Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+
+
+  Processor 7: Vertex: 'pop_one', pop size: 10000
+              Slice on this core: 9180:9434 (255 atoms)
+              Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+
+
+  Processor 8: Vertex: 'pop_one', pop size: 10000
+              Slice on this core: 9435:9689 (255 atoms)
+              Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+
+
+  Processor 9: Vertex: 'pop_one', pop size: 10000
+              Slice on this core: 9690:9944 (255 atoms)
+              Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+
+
+  Processor 10: Vertex: 'pop_one', pop size: 10000
+              Slice on this core: 9945:9999 (55 atoms)
+              Model: <bound method IFCurrExp.model_name of pop_one with 10000 atoms>
+
+

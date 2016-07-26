@@ -1,0 +1,19 @@
+Subvert: LiveSpikeReceiver:0:0 
+
+
+Subvert: pop_one:0:99 
+subedge:PartitionedEdge:pop_one:0:99->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0x80L:0xffffff80] 
+
+
+Subvert: pop_two:0:99 
+subedge:PartitionedEdge:pop_two:0:99->LiveSpikeReceiver:0:0, keys_and_masks:[KeyAndMask:0x100L:0xffffff80] 
+
+
+Subvert: spike_injector_one:0:99 
+subedge:PartitionedEdge:spike_injector_one:0:99->pop_one:0:99, keys_and_masks:[KeyAndMask:0x70000:0xffffff80] 
+
+
+Subvert: spike_injector_two:0:99 
+subedge:PartitionedEdge:spike_injector_two:0:99->pop_two:0:99, keys_and_masks:[KeyAndMask:0x0L:0xffffff80] 
+
+

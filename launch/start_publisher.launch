@@ -1,4 +1,4 @@
 
 <launch>
-      <node name="sample_publisher" pkg="spinn_wrapper" type="sample_publisher" respawn="true" />
+      <node name="sample_publisher" pkg="spinn_wrapper" type="sample_publisher" respawn="false" output="screen" />
 </launch>
